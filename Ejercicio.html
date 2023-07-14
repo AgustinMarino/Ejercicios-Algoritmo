@@ -1,36 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <H1>Ejercicios Algoritmo</H1>
-    <script src="../Ejercicios-Algoritmo/Ejer_1.js"></script>
-    <script src="../Ejercicios-Algoritmo/Ejer_2.js"></script>
-    <script src="../Ejercicios-Algoritmo/Ejer_3.js"></script>
-    <script src="../Ejercicios-Algoritmo/Ejer_4.js"></script>
-    <script src="../Ejercicios-Algoritmo/Ejer_5.js"></script>
-    <script src="../Ejercicios-Algoritmo/Ejer_6.js"></script>
+    <title>Trabajo Práctico Javascript</title>
 
-    <H3>Ejercicio 1:</H3>
-    <button onclick="Ejercicio1()">-O-</button>
-    <H3>Ejercico 2:</H3>
-    <button onclick="Ejercicio2()">-u-</button>
-    <H3>Ejercicio 3:</H3>
-    <button onclick="Ejercicio3()">:p</button>
-    <H3>Ejercicio 4:</H3>
-    <input type="number" id="dni">
-    <input type="text" id="letra">
-    <button onclick="Ejercicio4()">:D</button>
-    <H3>Ejercicio 5:</H3>
-    <input type="number" id="entero">
-    <button onclick="Ejercicio5()">^u^</button>
-    <H3>Ejercicio 6</H3>
-    <input type="number" id="numero">
-    <button onclick="Ejercicio6()">:V</button>
-</body>
+</head>
+
+    <body style="background-color: black;">
+
+        
+        <h1 style="font-family: Arial; color: white;">abri la consola pendejooo</h1>
+        <div>
+        <img src="F12.png">
+        <script src="Javascript.js"></script>
+        </div>
+
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold">Ejercicio 1</h2>
+        <div>
+        <input type="button" onclick="ej1()" value="ejecutar">
+        </div>
+
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold">Ejercicio 2</h2>
+        <div>
+        <input type="button" onclick="ej2()" value="ejecutar">
+        </div>
+
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold">Ejercicio 3</h2>
+        <div>
+        <input type="number" id="numero1" placeholder="Número 1"><br>
+        <input type="number" id="numero2" placeholder="Número 2"><br>
+        <input type="button" onclick="ej3()" value="ejecutar">
+        </div>
+
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold">Ejercicio 4</h2>
+        <div style="font-family: Arial; color: white;">
+        <input type="number" id="DNI" placeholder="Número de Documento"><br>
+        <input type="text" id="letra" placeholder="Predicción de Letra"><br>
+        <input type="button" onclick="ej4()" value="Asignar">
+        </div>
+
+
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold">Ejercicio 5</h2>
+        <div>
+        <input type="number" id="entero" placeholder="Número Entero"><br>
+        <input type="button" onclick="ej5()" value="ejecutar">
+        </div>
+
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold">Ejercicio 6</h2>
+        <div>
+        <input type="number" id="numeropoi" placeholder="Número"><br>
+        <input type="button" onclick="ej6()" value="ejecutar">
+        </div>
+
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold">Ejercicio 7</h2>
+        <div>
+        <input type="text" id="cadena" placeholder="Texto"><br>            
+        <input type="button" onclick="ej7()" value="ejecutar">
+        </div>
+
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold">Ejercicio 8</h2>
+        <div>
+        <input type="text" id="capicua" placeholder="Texto"><br>  
+        <input type="button" onclick="ej8()" value="ejecutar">
+        </div>
+
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold">Ejemplo 9</h2>
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold">Datos del Alumno</h2>
+        <label for="Nombre">Nombre</label><br>
+        <input type="text" id="Nombre"><br>
+        <label for="Edad">Edad</label><br>
+        <input type="text" id="Edad"><br>
+        <label for="Genero">Genero</label><br>
+        <input type="text" id="Genero"><br>
+        <label for="Curso">Curso</label><br>
+        <input type="text" id="Curso"><br>
+        <label for="Grupo">Grupo</label><br>
+        <input type="text" id="Grupo"><br>
+        <button onclick="EstudianteInstancia()" id="Alumno">Registar alumno</button>
+    
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold">Datos del Profesor</h2>
+        <label for="NombreP" style="font-family: Arial; color: white; font-size: 75%; font-weight: bold">Nombre</label><br>
+        <input type="text" id="NombreP"><br>
+        <label for="EdadP" style="font-family: Arial; color: white; font-size: 75%; font-weight: bold">Edad</label><br>
+        <input type="text" id="EdadP"><br>
+        <label for="GeneroP" style="font-family: Arial; color: white; font-size: 75%; font-weight: bold">Genero</label><br>
+        <input type="text" id="GeneroP"><br>
+        <label for="Asignatura" style="font-family: Arial; color: white; font-size: 75%; font-weight: bold">Asignatura</label><br>
+        <input type="text" id="Asignatura"><br>
+        <label for="Nivel" style="font-family: Arial; color: white; font-size: 75%; font-weight: bold">Nivel</label><br>
+        <input type="text" id="Nivel"><br>
+        <button onclick="ProfesorInstancias()" id="Profesor">Asignar Profesor</button>
+
+        <h2 style="font-family: Arial; color: white; font-size: 150%; font-weight: bold;">Ejercicio 10</h2>
+        <div>
+        <input type="button" onclick="ej10()" value="ejecutar">
+        </div>
+
+    </body>
+
 </html>
